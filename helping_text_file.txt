@@ -1,0 +1,20 @@
+IDENTIFIED COMMANDS : 
+-> create db;
+-> create table;
+-> e;
+-> show dbs;
+-> show tables;
+-> add record;
+-> del record;
+-> drop db;
+-> view table;
+
+HOW TO USE : 
+this software is simple to use and has been made after considering the user friendly nature of well known MySQL RDBMS, while this python based DBMS is not that advanced. but still it is able to perform all the major tasks which includes the basic DDL and DML commands.
+there are limited features of this software in this version(1.0.0) but are still useful. the intresting thing about this code/software is that it uses only one main code file as it's database, funny right. we don't need any other storage to store the input data.
+the file "memory_integration_test.py" has a code in which it can re-write it's code many times and can make modifications to the original dictionary declared at the beginning of this code.
+no external modules were used, so this software has been made as simple as possible.
+You Can Reach Me Through My Email : 
+aryansaraswatepi163@gmail.com
+
+THANK YOU FOR READING THIS FILE AND FOR USING MY SOFTWARE.
