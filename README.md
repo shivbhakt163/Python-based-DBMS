@@ -48,7 +48,7 @@
     <li>Run the main Python script:</li>
 </ol>
 
-<pre><code>python memory_integration_test.py
+<pre><code>python PQl_User_Server.py
 </code></pre>
 
 <ol start="2">
