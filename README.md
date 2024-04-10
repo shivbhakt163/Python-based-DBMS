@@ -22,6 +22,10 @@
     <li><strong>Help Command:</strong> Provides a list of all available commands.</li>
 </ul>
 
+![WhatsApp Image 2024-04-10 at 15 32 48_974aceaf](https://github.com/shivbhakt163/Python-based-DBMS/assets/153621570/719de441-0623-447f-a5c7-52c6d4df605a)
+![WhatsApp Image 2024-04-10 at 15 35 34_a310eef3](https://github.com/shivbhakt163/Python-based-DBMS/assets/153621570/b6ded868-2508-4d53-83e5-c9035668df3d)
+![WhatsApp Image 2024-04-10 at 15 36 23_8b898241](https://github.com/shivbhakt163/Python-based-DBMS/assets/153621570/fa3f4c27-f8dc-484f-8ef3-c780bed882a4)
+
 <h2>Installation</h2>
 
 <ol>
