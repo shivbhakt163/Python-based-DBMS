@@ -3,6 +3,14 @@ def create_db(dbs):
     dbnm = str(input("  -> Enter the database name : "))
     dbs[dbnm] = {}
     return dbs
+def drop_table(dbs,dbnm):
+    tb_nm = str(input("  -> Enter the table name : "))
+    if tb_nm in dbs[dbnm].keys():
+        dbs[dbnm].pop(tb_nm)
+        return dbs
+    else:
+        print("PQl> TABLE DOES NOT EXIST !!")
+        return dbs
 def drop_db(dbs):
     dbnm = str(input("  -> Enter the database name : "))
     if dbnm in dbs.keys():
@@ -208,6 +216,19 @@ while True:
         with open("PQl_User_Server.py","w") as f9:
             f9.writelines(l6)
         print("PQl> TASK COMPLETE !")
+    elif q.lower() == "drop table;":
+        print("PQl> PLEASE SPECIFY THE DATABASE NAME ⬇")
+        db_nm4 = str(input("  -> db_name = "))
+        if db_nm4 in dbs.keys():
+            dbst = drop_table(dbs,db_nm4)
+            with open("PQl_User_Server.py","r") as f10:
+                l7 = f10.readlines()
+            l7[0] = f"dbs = {dbst}\n"
+            with open("PQl_User_Server.py","w") as f11:
+                f11.writelines(l7)
+            print("PQl> TASK COMPLETE !")
+        else:
+            print("PQl> DATABASE DOES NOT EXIST !!")
     elif q.lower() == "view table;":
         print("PQl> PLEASE SPECIFY THE DATABASE ⬇")
         db_nm3 = str(input("  -> db_name = "))
