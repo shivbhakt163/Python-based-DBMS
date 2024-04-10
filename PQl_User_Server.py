@@ -130,7 +130,7 @@ def view_table(dbs,dbnm,tbnm):
 import time as tm
 import ctypes
 ctypes.windll.kernel32.SetConsoleTitleW("PQl-Monitor-Server")
-print("PQl Monitor version - 1.0.0(Type - - FREE OPEN SOURCE SOFTWARE - - publicaly available on github)\nCommunity Software Developed By - Aryan Saraswat\nRelease date - 09-04-2024, 23:49, TUESDAY. Developers' Github Profile - https://github.com/shivbhakt163 \n")
+print("PQl Monitor version - 1.0.0(Type - - FREE OPEN SOURCE SOFTWARE - - publicaly available on github)\nCommunity Software Developed By - Aryan Saraswat\nRelease date - 10-04-2024, 17:00, WEDNESDAY. Developers' Github Profile - https://github.com/shivbhakt163 \n")
 print("Software downloaded through - https://github.com/shivbhakt163/Python-based-DBMS")
 print("TO INPUT A RECORD FOLLOW THIS FORMAT - (PQl> Enter the rec : a1, a2, a3, a4, ... ,aN)\nCOMMANDS HERE END WITH ';'. REACH THE DEVELOPER THROUGH ⬇\naryansaraswatepi163@gmail.com")
 print()
