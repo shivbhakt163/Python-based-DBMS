@@ -216,7 +216,18 @@ while True:
             else:
                 print("PQL> TABLE DOES NOT EXIST !!")
         else:
-            print("PQL> DATABASE DOES NOT EXIST !!")    
+            print("PQL> DATABASE DOES NOT EXIST !!") 
+    elif q.lower() == "help;" or q.lower() == "Hlp;":
+        print("PQl> ALL KNOWN PQl COMMANDS ARE ⬇")
+        print("PQl> CREATE DB;")
+        print("  -> CREATE TABLE;")
+        print("  -> DROP DB;")
+        print("  -> VIEW TABLE;")
+        print("  -> e;")
+        print("  -> ADD RECORD;")
+        print("  -> DEL RECORD;")
+        print("  -> SHOW DBS;")
+        print("  -> SHOW TABLES;")
     elif q.lower() == "e;":
         break
     else:
