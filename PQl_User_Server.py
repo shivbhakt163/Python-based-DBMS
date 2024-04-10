@@ -132,20 +132,20 @@ while True:
     q = input("PQl> ")
     if q.lower()=="create db;":
         dbs1 = create_db(dbs)
-        with open("memory_integration_test.py",'r') as f:
+        with open("PQl_User_Server.py",'r') as f:
             l = f.readlines()
         l[0] = f"dbs = {dbs1}\n"
-        with open("memory_integration_test.py",'w') as f1:
+        with open("PQl_User_Server.py",'w') as f1:
             f1.writelines(l)
         print("PQl> DATABASE CREATED!")
     elif q.lower() == "create table;":
         dbnm = str(input("PQl> Enter db_name = "))
         if dbnm in dbs.keys():
             dbs2 = create_tbl(dbs,dbnm)
-            with open("memory_integration_test.py",'r') as f2:
+            with open("PQl_User_Server.py",'r') as f2:
                 l1 = f2.readlines()
             l1[0] = f"dbs = {dbs2}\n"
-            with open("memory_integration_test.py",'w') as f3:
+            with open("PQl_User_Server.py",'w') as f3:
                 f3.writelines(l1)
             print("PQl> TABLE CREATED!")
         else:
@@ -168,10 +168,10 @@ while True:
             tb_nm = str(input("  -> tbl_name = "))
             if tb_nm in dbs[db_nm1].keys():
                 dbs3 = add_rec(dbs,db_nm1,tb_nm)
-                with open("memory_integration_test.py","r") as f4:
+                with open("PQl_User_Server.py","r") as f4:
                     l4 = f4.readlines()
                 l4[0] = f"dbs = {dbs3}\n"
-                with open("memory_integration_test.py","w") as f5:
+                with open("PQl_User_Server.py","w") as f5:
                     f5.writelines(l4)
                 print("PQl> RECORD SUCCESSFULLY ADDED!")
             else:
@@ -186,10 +186,10 @@ while True:
             tb_nm1 = str(input("  -> tbl_name = "))
             if tb_nm1 in dbs[db_nm2].keys():
                 dbs4 = del_rec(dbs,db_nm2,tb_nm1)
-                with open("memory_integration_test.py","r") as f6:
+                with open("PQl_User_Server.py","r") as f6:
                     l5 = f6.readlines()
                 l5[0] = f"dbs = {dbs4}\n"
-                with open("memory_integration_test.py","w") as f7:
+                with open("PQl_User_Server.py","w") as f7:
                     f7.writelines(l5)
                 print("PQl> RECORDS DELETED SUCCESSFULLY !!")
             else:
@@ -199,10 +199,10 @@ while True:
     elif q.lower() == "drop db;":
         print("PQl> PLEASE SPECIFY THE DATABASE NAME ⬇")
         dbsd = drop_db(dbs)
-        with open("memory_integration_test.py","r") as f8:
+        with open("PQl_User_Server.py","r") as f8:
             l6 = f8.readlines()
         l6[0] = f"dbs = {dbsd}\n"
-        with open("memory_integration_test.py","w") as f9:
+        with open("PQl_User_Server.py","w") as f9:
             f9.writelines(l6)
         print("PQl> TASK COMPLETE !")
     elif q.lower() == "view table;":
