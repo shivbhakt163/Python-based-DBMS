@@ -157,9 +157,12 @@ while True:
     elif q.lower() == "show tables;":
         print("PQl> PLEASE SELECT A DATABASE :")
         db_nm = str(input("PQl> Enter the db_name = "))
-        print(f"PQl> SHOWING ALL TABLES IN {db_nm} ⬇")
-        for k in dbs[db_nm].keys():
-            print("  -> ",k)
+        if db_nm in dbs.keys():
+            print(f"PQl> SHOWING ALL TABLES IN {db_nm} ⬇")
+            for k in dbs[db_nm].keys():
+                print("  -> ",k)
+        else:
+            print("PQl> DATABASE DOES NOT EXIST !!")
     elif q.lower() == "add record;":
         print("PQl> PLEASE SPECIFY THE DATABASE ⬇")
         db_nm1 = str(input("  -> db_name = "))
