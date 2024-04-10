@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h0>Python-based Database Management System (PQl Monitor)</h0>
 </head>
 <body>
 
